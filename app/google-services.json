@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "738718673059",
+    "firebase_url": "https://telegram-6ba77.firebaseio.com",
+    "project_id": "telegram-6ba77",
+    "storage_bucket": "telegram-6ba77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738718673059:android:7acfe9c3b167c5fb34b716",
+        "android_client_info": {
+          "package_name": "com.example.telegram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738718673059-goh0skeej9fplk37et53ljmnimdcp823.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOXovLDUyzrPL0MEXP-Fy3rT8e9D4uxsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738718673059-goh0skeej9fplk37et53ljmnimdcp823.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
