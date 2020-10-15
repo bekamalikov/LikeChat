@@ -2,7 +2,6 @@ package com.example.telegram.ui.fragments
 
 import androidx.fragment.app.Fragment
 import com.example.telegram.MainActivity
-
 import com.example.telegram.R
 import com.example.telegram.activities.RegisterActivity
 import com.example.telegram.utilits.AUTH
@@ -10,7 +9,6 @@ import com.example.telegram.utilits.replaceActivity
 import com.example.telegram.utilits.replaceFragment
 import com.example.telegram.utilits.showToast
 import com.google.firebase.FirebaseException
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import kotlinx.android.synthetic.main.fragment_enter_phone_number.*
@@ -42,7 +40,8 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
                 replaceFragment(EnterCodeFragment(mPhoneNumber,id))
             }
         }
-        register_btn_next.setOnClickListener { sendCode() }
+        register_btn_next.setOnClickListener {
+            sendCode() }
     }
 
     private fun sendCode() {

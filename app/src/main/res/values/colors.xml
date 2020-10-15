@@ -6,6 +6,8 @@
     <color name="colorAccentDark">#D1CDCD</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGrey">#837E7E</color>
+    <color name="colorMessage">#EBB3E47C</color>
+    <color name="colorBlue">#EB55DAE6</color>
 
     <!-- Material DEFAULT colors -->
     <color name="material_drawer_primary">#2196F3</color>
