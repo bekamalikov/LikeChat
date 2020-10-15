@@ -52,11 +52,13 @@ class ContactFragment : BaseFragment(R.layout.fragment_contact) {
                     .child(model.id)//пробираемся по айдишке в номер телефона
                 mRefUserListener = AppValueEventListener {
                     val contact = it.getCommonModel()
-                    holder.name.text = contact.fullname
+                    if (contact.fullname.isEmpty()) {
+                        holder.name.text = model.fullname
+                    } else holder.name.text = contact.fullname
                     holder.status.text = contact.state
                     holder.photo.downloadAndSetImage(contact.photoURL)
-                    holder.itemView.setOnClickListener{
-                       replaceFragment(SingleChatFragment(contact))
+                    holder.itemView.setOnClickListener {
+                        replaceFragment(SingleChatFragment(model))
                     }
                 }
                 mRefUsers.addValueEventListener(mRefUserListener)
